@@ -21,7 +21,7 @@ $(() => {
 		  clearInterval(interval);
 		  changeColor();
 		}
-	}, 100);
+	}, 2000);
 
 	const changeColor = () => {
 		$('#target').css('background', '#00A910');
