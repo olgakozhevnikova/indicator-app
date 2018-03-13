@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Indicator App</title>
+</head>
+<body>
+	<div class="container col-12" id="main-box">
+		<div class="card border-secondary mb-3">
+			<div class="card-header text-white">Target Indicator Demo</div>
+			<div class="card-body bg-1">
+				<div class="container-fluid bordered pr-1">
+					<div class="row no-gutters pt-2 pb-3">
+						<div class="col-3">
+							<span class="font-weight-bold align-baseline">Reached: </span>
+						</div>
+						<div class="col-6">
+							<div class="progress">
+								<div class="bar-step">
+									<div class="label-txt" id="initial-value">
+										<div class="fa fa-caret-up"></div><div id="value">$</div>
+									</div>
+								</div>
+								<div id="dynamic" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="15" style="width: 0%"></div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div id="target">
+								<div>Target</div>
+								<hr>
+								<div>$15</div>
+							</div>
+						</div>
+					</div>
+					<p id="reference"><i class="info-icon font-italic font-weight-bold mr-2 align-middle">i</i>You need $1 more to reach your target.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

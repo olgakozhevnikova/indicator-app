@@ -1,0 +1,131 @@
+#main-box {
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #5f5f5f;
+}
+
+.card-header {
+    padding: 0.5em 1.5em;
+    background: #4d4d4d;
+}
+
+.bg-1 {
+    background: #f5f5f5;
+}
+
+.bordered {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    padding-left: 3em;
+}
+
+#target {
+    display: block;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(#919191, #424242);
+    width: 3.125em;
+    height: 2.8em;
+}
+
+#target div {
+    margin: -0.3em 0 -1em 0;
+    font-size: 0.9em;
+}
+
+#target div:last-child {
+    margin: -1em 0 0 0;
+    font-size: 1.2em;
+}
+
+hr {
+    border-bottom: 1px solid #8c8b8b;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+.progress {
+    height: 1.1em;
+    background-color: #d6d2d2;
+    border: 0.25em solid #d6d2d2;
+    border-radius: 0px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+div.progress {
+  margin: 0;
+}
+
+#initial-value {
+    text-align: center;
+    width: 1.875em;
+    height: 3.125em;
+    display: block;
+}
+
+#initial-value div:first-child {
+    margin: 0 0 -0.6em 0;
+    font-size: 1.3em;
+}
+
+#value {
+    margin: -0.6em 0 0 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#reference {
+    font-size: 0.95em;
+}
+
+.info-icon {
+    font-family: Palatino;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    background: linear-gradient(#0076bb, #024d79);
+    text-align: center;
+    width: 1em;
+    line-height: 1em;
+    font-size: 1.3em;
+}
+
+.bar-step {
+    position: absolute;
+    margin-top: 0.5em;
+    margin-left: -0.937em;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        font-size: 13px;
+    }
+
+    .bordered {
+        padding-left: 1em;
+    }
+
+    #target {
+        height: 3.5em;
+    }
+}
